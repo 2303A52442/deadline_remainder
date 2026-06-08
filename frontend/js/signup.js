@@ -8,7 +8,7 @@ form.addEventListener("submit", async (e) => {
   const password = document.getElementById("password").value;
 
   const response = await fetch(
-    "http://localhost:5000/api/users/signup",
+    "https://deadline-remainder.onrender.com/api/users/signup",
     {
       method: "POST",
       headers: {

@@ -14,7 +14,7 @@ form.addEventListener("submit", async (e) => {
     document.getElementById("deadline").value;
 
   const response = await fetch(
-    "http://localhost:5000/api/reminders/add",
+    "https://deadline-remainder.onrender.com/api/reminders/add",
     {
       method: "POST",
       headers: {

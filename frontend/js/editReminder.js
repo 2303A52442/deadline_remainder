@@ -28,8 +28,8 @@ form.addEventListener(
       "deadline"
     ).value;
 
-    await fetch(
-      `http://localhost:5000/api/reminders/${reminderId}`,
+    const response = await fetch(
+      `https://deadline-remainder.onrender.com/api/reminders/${reminderId}`,
       {
         method: "PUT",
 

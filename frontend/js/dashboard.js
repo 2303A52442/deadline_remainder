@@ -17,7 +17,7 @@ if (welcomeUser) {
 async function loadReminders() {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/reminders?userId=${currentUser._id}`
+      `https://deadline-remainder.onrender.com/api/reminders?userId=${currentUser._id}`
     );
 
     const reminders =
@@ -143,7 +143,7 @@ async function deleteReminder(id) {
   }
 
   await fetch(
-    `http://localhost:5000/api/reminders/${id}`,
+    `https://deadline-remainder.onrender.com/api/reminders/${id}`,
     {
       method: "DELETE",
     }
